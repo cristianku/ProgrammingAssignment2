@@ -1,8 +1,8 @@
 makeVector <- function(x = numeric()) {
         m <- NULL
-        set <- function(y) {
-                x <<- y
+        set <- function(y= numeric()) {
                 m <<- NULL
+                x <<- y
         }
         get <- function() x
         setmean <- function(mean) m <<- mean
